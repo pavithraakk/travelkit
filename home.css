@@ -1,0 +1,54 @@
+.user{
+    width: 200px;
+    height: 30px;
+border-radius: 5px;
+    border: 1px solid #734F96;
+    padding: 10px;
+
+}
+body{
+    background-color: #f9f9f9;
+   font-family: 'Winky Sans', sans-serif;
+}
+@font-face {
+    font-family: 'Winky Sans';
+    src: url('./fonts/WinkySans-VariableFont_wght.ttf')
+    format('truetype');
+    font-weight: normal;
+}
+h4{
+    font-weight: 700;  
+    font-size: 30px;
+    color: #734F96;
+}
+button{
+    width: 100px;
+    background-color: #734F96;
+    border-radius: 5px;
+    padding: 13px ;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.98);
+}
+.page{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+row-gap: 15px;
+margin: 120px auto;
+}
+.error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display:block;
+}
