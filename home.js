@@ -10,12 +10,16 @@ continueBtn.addEventListener('click',function(){
      console.log(destination.value);
     const current=currentLocation.value.trim();
     const dest=destination.value.trim();
+    currentError.textContent="";
+    destinationError.textContent="";
+
     if(current==""){
         currentError.textContent="Current location is required";
     }
     if(dest==""){
         destinationError.textContent="Destination is required";
     }
-
-
+    else if(current!="" && dest!=""){
+        window.location.href="filter.html";
+    }
 });
